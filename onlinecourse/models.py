@@ -120,7 +120,7 @@ class Question(models.Model):
         
 class Choice(models.Model):
     choice = models.ForeignKey(Question, on_delete=models.CASCADE)
-    content = models.CharField(200)
+    content = models.CharField(max_length=200)
     is_Correct = models.BooleanField
 
 
