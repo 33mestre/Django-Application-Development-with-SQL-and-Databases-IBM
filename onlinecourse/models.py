@@ -10,7 +10,7 @@ from django.conf import settings
 import uuid
 
 
-# Instructor model
+#   Instructor model
 class Instructor(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
